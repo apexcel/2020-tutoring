@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type='text/javascript'>
+        (() => {console.log('IIFE Head')})();
+        const load = () => {
+            console.log('Head loaded');
+        };
+        window.onload = load;
+        function onClick() {
+            alert("You've clicked me!");
+        };
+        // 실행이 안되는 이유는 <body> 먼저 로드하기 때문.
+        document.getElementById('btn2').addEventListener('click', () => {
+            alert("You've clicked me twice!");
+        });
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <button id='btn' onclick="onClick()">Click me</button>
+    <button id='btn2'>Click me</button>
+    <button id='btn3'>Click me</button>
+    <script>
+        (() => {console.log('IIFE Body')})();
+        document.getElementById('btn3').addEventListener('click', () => {
+            alert("You've clicked me twice!");
+        });
+        console.log('Body loaded');
+    </script>
+</body>
+
+</html>

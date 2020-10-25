@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Dosis|Lobster|Merriweather&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css">
+        <script src="https://kit.fontawesome.com/c5dee49c9a.js" crossorigin="anonymous"></script>
+        <link href="./css/main.css" type="text/css" rel="stylesheet" />
+        <script src="./js/utils.js" type="text/javascript"></script>
+        <link href="./css/audio.css" type="text/css" rel="stylesheet" />
+        <script type="text/JavaScript" src="./js/audio.js"></script>
+        <title>Main</title>
+    </head>
+<body>
+
+    <div id="container">
+    <header>
+        <nav id='top_nav'>
+            <ul>
+                <li><a href="./main.html" style="background-color: #3f9c3c;">MAIN</a></li>
+                <li><a href="./htmlinfo.html">HTML</a></li>
+                <li><a href="./cssinfo.html">CSS</a></li>
+                <li><a href="./jsinfo.html">JAVASCRIPT</a></li>
+                <li class="go-right"><a href="./contacts.html">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="main_content">
+        <h1>MAIN</h1>
+        <h5>현재 시각 : <span id="time"></span></h5>
+        <p>해당 웹 페이지는 HTML, CSS 그리고 JS에 관해 간략히 소개하기 위해 작성된 페이지 입니다.
+        상단의 메뉴바를 이용하여 추가적인 설명을 확인 할 수 있습니다.
+        아래의 간단한 설문에 참여해주시면 감사하겠습니다.</p>
+        <hr>
+
+        <h3>설문</h3>
+        <br/>
+        <form>
+            <div class="form-group">
+                <label for="nameInput">이름</label> 
+                <input type="text" class="form-control"  id="nameInput" placeholder="이름" />
+            </div>
+            <hr/>
+            <div class="form-group">
+                <label for="emailInput">이메일</label> 
+                <input type="email" class="form-control"  id="emailInput" placeholder="example@email.com" />
+            </div>
+            <hr/>
+
+            <p>성별</p>
+            <div class="form-check my_radio">
+                <label class="form-check-label" for="gender_male">
+                    <input class="form-check-input" name="gender" type="radio" id="gender_male">남</label>
+            </div>
+            <div class="form-check my_radio">
+                <label class="form-check-label" for="gender_female">
+                    <input class="form-check-input" name="gender" type="radio" id="gender_female">여</label>
+            </div>
+            <hr/>
+
+            <div class="form-group">
+                <label for="selector">학년</label>
+                <select class="form-control" name="sel" id="selector" onchange="getSelect(this)">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <hr/>
+
+            <p>관심 영역</p>
+            <div class="form-check form-check-inline">
+                <input id="hardware" class="form-check-input" type="checkbox" name="interest" value="hardware">
+                <label for="hardware">하드웨어</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="software" class="form-check-input" type="checkbox" name="interest" value="software">
+                <label for="software">소프트웨어</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="app" class="form-check-input" type="checkbox" name="interest" value="app">
+                <label for="app">어플리케이션</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="web" class="form-check-input" type="checkbox" name="interest" value="web">
+                <label for="web">웹 개발</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="network" class="form-check-input" type="checkbox" name="interest" value="network">
+                <label for="network">네트워크</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="embedded" class="form-check-input" type="checkbox" name="interest" value="embedded">
+                <label for="embedded">임베디드</label>
+            </div>
+            <hr/>
+
+            <div id="con">
+                <button onclick="alertMsg()" id="confirm" type="button" class="btn btn-primary">확인</button>
+            </div>
+        </form>
+        <footer>
+            <div>
+                <div class="box">
+                    <div id="seekbar">
+                        <input id="seek" class="audio-plays" type="range" oninput="setPos(this.value)" value="0" max="" />
+                    </div>
+                    <div id="buttons" >
+                        <button class="btn" onclick="skip('back')"><i class=" fas fa-fast-backward"></i></button>
+                        <button class="btn" id="play-pause" onclick="playPause()"><i class=" fas fa-play"></i></button>
+                        <button class="btn" onclick="stop()"><i class=" fas fa-stop"></i></button>
+                        <button class="btn" onclick="skip('fwd')"><i class=" fas fa-fast-forward"></i></button>
+                    </div>
+                    <div class="volume-control">
+                        <button id="mute" onclick="mute()" class="btn"><i class="fas fa-volume-up"></i></button>
+                        <input type="range" class="volumes" id="volume" oninput="setVolume(this.value)" min="0" max="1" step="0.01" value="0.5" />
+                    </div>
+                </div >
+            </div>
+        </footer>
+
+
+    </section>
+    </div>
+</body>
+</html>

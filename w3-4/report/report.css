@@ -1,0 +1,227 @@
+@import url("./hover.css");
+@import url("./audio.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    color: #8d8d8d;
+}
+
+body {
+    background: black;
+    align-content: center;
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+}
+
+header {
+    margin: 10px;
+    padding: 10px;
+    background: black;
+}
+
+.info {
+    display: flex;
+    flex-flow: column;
+    font-size: 2em;
+    margin: 5px;
+    align-items: center;
+    margin-top: 10%;
+    background: #000000;
+}
+
+#pic_bg {
+    position: relative;
+    display: flex;
+    width: 310px;
+    height: 310px;
+    background: white;
+    border-radius: 180px;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#mypic {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 155px;
+    z-index: 11;
+}
+
+.con {
+    display: flex;
+    background: black;
+    margin: 0 100px 0 100px;
+    min-height: 80vh;
+    background: #000000;
+    margin-bottom: 50px;
+}
+
+.item {
+    order: 0;
+    padding: 10px;
+    background: #000000;
+    border-left: 3px solid #242424;
+    flex-grow: 1;
+    font-size: 1.2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+}
+
+p {
+    font-size: 1.2em;
+    color: #2c7e58;
+}
+
+.item div {
+    text-align: center;
+}
+
+.logos {
+    float: left;
+    clear: both;
+    width: 75px;
+    height: 100px;
+}
+
+.vis {
+    display: flex;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#html5 {
+    float: left;
+    border: 3px solid rgb(248, 98, 11);
+    margin: 3px;
+    width: 100%;
+}
+
+#css3 {
+    float: left;
+    border: 3px solid rgb(41, 127, 255);
+    margin: 3px;
+    width: 100%;
+}
+
+#js {
+    float: left;
+    border: 3px solid rgb(248, 173, 11);
+    margin: 3px;
+    width: 100%;
+}
+
+#html5Bar {
+    width: 1%;
+    height: 50px;
+    background: rgb(250, 142, 40);
+}
+
+#css3Bar {
+    width: 1%;
+    height: 50px;
+    background: rgb(86, 173, 255);
+}
+
+#jsBar {
+    width: 1%;
+    height: 50px;
+    background: rgb(175, 128, 26);
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    background: black;
+    bottom: 0;
+    z-index: 15;
+}
+
+.dona {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dona button {
+    font-size: 2em;
+}
+
+.fbox {
+    display: flex;
+    flex-flow: column;
+    align-items: left;
+    justify-content: center;
+    
+}
+
+.fitem {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+
+}
+
+.fhead {
+    flex: 1;
+}
+
+.fcon {
+    flex: 4;
+    font-size: 1em;
+}
+
+.lefts {
+    margin: 20px;
+    padding: 20px;
+}
+
+.lefts h1, h2, h3, h4, h5, h6, p {
+    margin: 10px;
+    padding: 10px;
+}
+
+.my-modal {
+    background: #303030 !important;
+}
+
+.my-input:focus {
+    color: #2fda38;
+    font-size: 1.2em;
+}
+
+.my-heading {
+    color: #1d860f;
+    background: #242424;
+}
+
+.my-input {
+    background: #303030 !important;
+}
+
+.my-input:hover {
+    background: #7fac74 !important;
+}
+
+.play-list {
+    display: inline-block;
+    border: 1px dotted #ffffff;
+    border-radius: 25px;
+    margin: 10px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.play-list li {
+    position: none;
+    transform: none;
+    list-style: none;
+    margin: 10px;
+    font-size: 0.5em;
+}

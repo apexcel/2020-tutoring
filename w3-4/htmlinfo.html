@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Dosis|Lobster|Merriweather&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css">
+        <script src="https://kit.fontawesome.com/c5dee49c9a.js" crossorigin="anonymous"></script>
+        <link href="./css/main.css" type="text/css" rel="stylesheet" />
+        <link href="./css/audio.css" type="text/css" rel="stylesheet" />
+        <script type="text/JavaScript" src="./js/audio.js"></script>
+        <title>HTML</title>
+    </head>
+<body>
+
+    <div id="container">
+    <header>
+        <nav id='top_nav'>
+            <ul>
+                <li><a href="./main.html">MAIN</a></li>
+                <li><a style="background-color: #3f9c3c;" href="./htmlinfo.html">HTML</a></li>
+                <li><a href="./cssinfo.html">CSS</a></li>
+                <li><a href="./jsinfo.html">JAVASCRIPT</a></li>
+                <li class="go-right"><a href="./contacts.html">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="main_content">
+        <h1>HTML</h1>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#intro">HTML 소개 영상</a></li>
+            <li class="list-group-item"><a href="#markup">Mark Up</a></li>
+            <li class="list-group-item"><a href="#markdown">Mark Down</a></li>
+            <li class="list-group-item"><a href="#templete">Templte Engine</a></li>
+        </ul>
+        <hr/>
+        <h3 id="intro">HTML 소개 영상</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OGFgdro160I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <hr>
+        <h2>HTML</h2>
+        <p>HTML은 하이퍼텍스트 마크업 언어(HyperText Markup Language)라는 의미의 웹 페이지를 위한 지배적인 마크업 언어다. HTML은 제목, 단락, 목록 등과 같은 본문을 위한 구조적 의미를 나타내는 것뿐만 아니라 링크, 인용과 그 밖의 항목으로 구조적 문서를 만들 수 있는 방법을 제공한다. 그리고 이미지와 객체를 내장하고 대화형 양식을 생성하는 데 사용될 수 있다. HTML은 웹 페이지 콘텐츠 안의 꺾쇠 괄호에 둘러싸인 "태그"로 되어있는 HTML 요소 형태로 작성한다. HTML은 웹 브라우저와 같은 HTML 처리 장치의 행동에 영향을 주는 자바스크립트와 본문과 그 밖의 항목의 외관과 배치를 정의하는 CSS 같은 스크립트를 포함하거나 불러올 수 있다. HTML과 CSS 표준의 공동 책임자인 W3C는 명확하고 표상적인 마크업을 위하여 CSS의 사용을 권장한다.</p>
+        <hr/>
+
+        <h3 id="markup">Mark Up</h3>
+        <p>마크업 이란 마크(Mark)로 둘러싸인 언어를 말한다. HTML에서는 꺽쇠로 표현되며 태그로 둘러쌓여 있다고도 표현한다. 문서의 골격을 담당한다.</p>
+        <br>
+        <h3 id="markdown">Mark Down</h3>
+        <p>마크 다운은 마크업 언어의 일종으로 존 그루버와 아론 스워츠가 만들었다. 간편하게 문서 작업을 할 때 자주 쓰인다.</p>
+        <hr>
+
+        <h3 id="templete">Templete Engine</h3>
+        <p>HTML은 프로그래밍 언어가 아니므로 계산이나 동적표현을 할 수가 없다. 이와 같은 것들을 보완하기 위해 프로그래밍 언어와 연동할 수 있도록 기능성을 보안한 것이 바로 템플릿 엔진(Templete Engine)이다. Jade, Pug, Mustache, EJS, HandleBars와 같은 템플릿
+            엔진들은 문서를 프로그래밍 언어처럼 작성하거나 프로그래밍 언어와 연동하여 빠르고 쉽게 그리고 중복성을 피하게 하여 작성을 용이하게 도와준다.
+        </p>
+
+        <table class="table table-hover">
+            <thead class="thead-light">
+                <th scope="col">기능</th> <th scope="col">HTML</th> <th scope="col">MD</th> <th scope="col">Mustache</th> <th scope="col">EJS</th>
+            </thead>
+            <tbody>
+                <tr scope="row"><td>프로그래밍 연동</td> <td>불가</td> <td>불가</td> <td>가능</td> <td>가능</td></tr>
+                <tr scope="row"><td>템플릿 엔진</td> <td>불가</td> <td>불가</td> <td>가능</td> <td>가능</td></tr>
+                <tr scope="row"><td>빠른 작성</td> <td>느림</td> <td>빠름</td> <td>매우 빠름</td> <td>매우 빠름</td></tr>
+                <tr scope="row"><td>복잡성</td> <td>낮음</td> <td>낮음</td> <td>약간 높음</td> <td>약간 높음</td></tr>
+            </tbody>
+        </table>
+        <footer>
+            <div>
+                <div class="box">
+                    <div id="seekbar">
+                        <input id="seek" class="audio-plays" type="range" oninput="setPos(this.value)" value="0" max="" />
+                    </div>
+                    <div id="buttons" >
+                        <button class="btn" onclick="skip('back')"><i class=" fas fa-fast-backward"></i></button>
+                        <button class="btn" id="play-pause" onclick="playPause()"><i class=" fas fa-play"></i></button>
+                        <button class="btn" onclick="stop()"><i class=" fas fa-stop"></i></button>
+                        <button class="btn" onclick="skip('fwd')"><i class=" fas fa-fast-forward"></i></button>
+                    </div>
+                    <div class="volume-control">
+                        <button id="mute" onclick="mute()" class="btn"><i class="fas fa-volume-up"></i></button>
+                        <input type="range" class="volumes" id="volume" oninput="setVolume(this.value)" min="0" max="1" step="0.01" value="0.5" />
+                    </div>
+                </div >
+            </div>
+        </footer>
+    </section>
+    </div>
+</body>
+</html>

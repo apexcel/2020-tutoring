@@ -1,0 +1,69 @@
+.box
+{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+.box ul
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.box ul li
+{
+    position: none;
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    margin: 10px 20px;
+    padding: 10px;
+    transform: rotate(-30deg) skew(25deg);
+    background: 242424;
+}
+
+ul li span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 242424;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bet {
+    margin: 10px 20px 10px 20px;
+}
+
+ul li:hover span:nth-child(5)
+{
+    transform: translate(40px, -40px);
+    opacity: 0.8;
+}
+ul li:hover span:nth-child(4)
+{
+    transform: translate(30px, -30px);
+    opacity: 0.6;
+}
+ul li:hover span:nth-child(3)
+{
+    transform: translate(20px, -20px);
+    opacity: 0.4;
+}
+ul li:hover span:nth-child(2)
+{
+    transform: translate(10px, -10px);
+    opacity: 0.2;
+}
+ul li:hover span:nth-child(1)
+{
+    transform: translate(0);
+    opacity: 0;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Dosis|Lobster|Merriweather&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css">
+        <script src="https://kit.fontawesome.com/c5dee49c9a.js" crossorigin="anonymous"></script>
+        <link href="./css/main.css" type="text/css" rel="stylesheet" />
+        <script type="text/JavaScript" src="./js/utils.js"></script>
+        <link href="./css/audio.css" type="text/css" rel="stylesheet" />
+        <script type="text/JavaScript" src="./js/audio.js"></script>
+        <title>JavaScript</title>
+    </head>
+<body>
+
+    <div id="container">
+    <header>
+        <nav id='top_nav'>
+            <ul>
+                <li><a href="./main.html">MAIN</a></li>
+                <li><a href="./htmlinfo.html">HTML</a></li>
+                <li><a href="./cssinfo.html">CSS</a></li>
+                <li><a style="background-color: #3f9c3c;" href="./jsinfo.html">JAVASCRIPT</a style="background-color: #3f9c3c;"></li>
+                <li class="go-right"><a href="./contacts.html">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="main_content">
+        <h1>JavaScript</h1>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#intro">JavaScript 소개 영상</a></li>
+            <li class="list-group-item"><a href="#js">JavaScript</a></li>
+            <li class="list-group-item"><a href="#es">ECMAScript</a></li>
+            <li class="list-group-item"><a href="#node">Node.js</a></li>
+            <li class="list-group-item"><a href="#etc">Etc</a></li>
+            <li class="list-group-item"><a href="#using">JS 활용</a></li>
+        </ul>
+        <hr/>
+
+        <h3 id="intro">JavaScript 소개 영상</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PZIPsKgWJiw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <hr>
+
+        <h3 id="js">JavaScript</h3>
+        <p>자바스크립트(영어: JavaScript)는 객체 기반의 스크립트 프로그래밍 언어이다. 이 언어는 웹 브라우저 내에서 주로 사용하며, 다른 응용 프로그램의 내장 객체에도 접근할 수 있는 기능을 가지고 있다. 또한 Node.js와 같은 런타임 환경과 같이 서버 사이드 네트워크 프로그래밍에도 사용되고 있다. 자바스크립트는 본래 넷스케이프 커뮤니케이션즈 코퍼레이션의 브렌던 아이크(Brendan Eich)가 처음에는 모카(Mocha)라는 이름으로, 나중에는 라이브스크립트(LiveScript)라는 이름으로 개발하였으며, 최종적으로 자바스크립트가 되었다. 자바스크립트가 썬 마이크로시스템즈의 자바와 구문이 유사한 점도 있지만, 이는 사실 두 언어 모두 C 언어의 기본 구문에 바탕을 뒀기 때문이고, 자바와 자바스크립트는 직접적인 관련성이 없다. 이름과 구문 외에는 자바보다 셀프나 스킴과 유사성이 많다.
+            </p>
+        <hr>
+
+        <h3 id="es">ECMAScript</h3>
+        <p>ECMA스크립트(ECMAScript, 또는 ES)는 Ecma 인터내셔널의 ECMA-262 기술 규격에 정의된 표준화된 스크립트 프로그래밍 언어이다. 자바스크립트를 표준화하기 위해 만들어졌고 지금도 자바스크립트가 제일 잘 알려져 있지만, 액션스크립트와 J스크립트 등 다른 구현체도 포함하고 있다. ECMA스크립트는 웹의 클라이언트 사이드 스크립트로 많이 사용되며 Node.js를 사용한 서버 응용 프로그램 및 서비스에도 점차 많이 쓰이고 있다.</p>
+        <p>일반적으로 불리는 ES들은 JS라고 보아도 무방하다. Node js의 등장과 ES6부터 급격하게 변화하기 시작한 JS는 매년 Ecma 인터내셔널에서 기술 규격을 배포하고 있으며 계속해서 새로운 기능들이 추가되고 있다. 이에 웹 개발자나 자바스크립트를 사용하는 개발자들은 규격을 숙지하고 계속해서 공부하는 것이 필요하다.</p>
+        <hr>
+
+        <h3 id="node">Node.js</h3>
+        <p>Node.js는 확장성 있는 네트워크 애플리케이션(특히 서버 사이드) 개발에 사용되는 소프트웨어 플랫폼이다. 작성 언어로 자바스크립트를 활용하며 Non-blocking I/O와 단일 스레드 이벤트 루프를 통한 높은 처리 성능을 가지고 있다.
+        내장 HTTP 서버 라이브러리를 포함하고 있어 웹 서버에서 아파치 등의 별도의 소프트웨어 없이 동작하는 것이 가능하며 이를 통해 웹 서버의 동작에 있어 더 많은 통제를 가능케 한다.</p>
+
+        <p>노드의 등장으로 가장 빛을 보게된 것을 서버사이드이다. 기존의 사람들의 인식은 자바스크립트는 브라우저상에서만 사용하고 초보적인 언어라고 생각하였지만 노드의 등장으로 브라우저밖으로 나갈 수 있게 되었고 이를 통해 많은 프로그램들이 자바스크립트로 작성이 되었다.
+            또한 기초적인 부분은 배우기 쉽지만 본격적으로 코어와 V8엔진의 가동방식을 이해하고 서로 다른 모듈 임포트 방식에 따른 구현 또한 숙지해야한다.
+            대표적으로 Visual Studio Code는 자바스크립트의 SuperSet인 TypeScript로 만들어졌다. 그리고 OS에 상관받지 않고 데스크탑용 앱을 제작할 수 있는 Electron도 존재한다. 이들은 모두 자바스크립트를 기반으로 하기 때문에 어느정도의 기초 실력만 있다면 간단한 것들은 손쉽게 만들 수 있다.
+        </p>
+        <hr>
+
+        <h3 id="etc">Etc</h3>
+        <p>현재 SPA에서 가장 많이 쓰이는 React.js, Vue, Angular와 같은 라이브러리와 프레임워크 역시 자바스크립트로 이루어져 있고 이들을 통해 하이브리드 앱을 만들거나 PWA를 구현하는데에도 자바스크립트가 쓰인다.
+            웹 개발에 관심이 있다면 자바스크립트는 HTML, CSS와 더불어 필수적인 요소이다. 다만 그 비중에 있어 자바스크립트로 HTML과 CSS를 대신할 수 있기 때문에 심도있게 공부하는 것이 중요하다.
+        </p>
+        <hr>
+
+        <h3 id="using">JS 활용</h3>
+        <div>
+            <p id="js_pover" onmouseover="mouseOverEvent()">마우스를 올려보세요</p>
+        </div>
+
+        <div>
+            <p id="js_p" onclick="clickEvent()">클릭 해보세요</p>
+        </div>
+
+        <div>
+            <p id="js_dbp" ondblclick="clickEvent2()">더블 클릭 해보세요</p>
+        </div>
+        <footer>
+            <div>
+                <div class="box">
+                    <div id="seekbar">
+                        <input id="seek" class="audio-plays" type="range" oninput="setPos(this.value)" value="0" max="" />
+                    </div>
+                    <div id="buttons" >
+                        <button class="btn" onclick="skip('back')"><i class=" fas fa-fast-backward"></i></button>
+                        <button class="btn" id="play-pause" onclick="playPause()"><i class=" fas fa-play"></i></button>
+                        <button class="btn" onclick="stop()"><i class=" fas fa-stop"></i></button>
+                        <button class="btn" onclick="skip('fwd')"><i class=" fas fa-fast-forward"></i></button>
+                    </div>
+                    <div class="volume-control">
+                        <button id="mute" onclick="mute()" class="btn"><i class="fas fa-volume-up"></i></button>
+                        <input type="range" class="volumes" id="volume" oninput="setVolume(this.value)" min="0" max="1" step="0.01" value="0.5" />
+                    </div>
+                </div >
+            </div>
+        </footer>
+    </section>
+    </div>
+</body>
+</html>

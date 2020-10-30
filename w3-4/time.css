@@ -1,0 +1,11 @@
+.container {
+    min-height: 100vh;
+    max-height: 100%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+#time {
+    border: 1px solid blue;
+}

@@ -3,26 +3,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 320px;
-    height: 520px;
+    width: 380px;
+    height: 550px;
     margin: 10px;
     padding: 0;
     box-shadow: 4px 4px 5px 2px rgb(122, 122, 122);
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ececec;
 }
 
 .title h1{
     margin: 0;
-    padding: 0 40px;
-    font-size: 1.1rem;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
 }
-
+    
 .genres {
     font-size: 0.8rem;
     margin: 5px;
 }
 
 .genres span {
-    background-color: rgb(189, 189, 189);
+    background-color: rgb(219, 219, 219);
     padding: 2px;
     margin-right: 3px;
     border-radius: 5px;
@@ -31,5 +35,6 @@
 .summary {
     padding: 0 20px;
     font-size: 0.9rem;
+    height: 100px;
     overflow: hidden;
 }

@@ -27,17 +27,9 @@ function App() {
 
   const renderMovies = () => {
     return movies.map((el, idx) => 
-      <div key={idx}>
-        {el.title}
-      </div>
-    )
-  } 
-
-  const renderMovies2 = () => {
-    return movies.map((el, idx) => 
       <MovieCard
         key={idx}
-        title={el.title}
+        title={el.title_long}
         img={el.medium_cover_image}
         genres={el.genres}
       >
@@ -49,9 +41,8 @@ function App() {
 
   return (
     <div className="App">
-      {/* {movies.length > 0 ? renderMovies() : <Loading />} */}
       <div className='wrapper'>
-        {movies.length > 0 ? renderMovies2() : <Loading />}
+        {movies.length > 0 ? renderMovies() : <Loading />}
       </div>
     </div>
   );

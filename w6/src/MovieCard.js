@@ -20,9 +20,7 @@ export default function MovieCard({
 
     return (
         <div className='movie_card-wrapper'>
-            <div>
-                <img src={img}/>
-            </div>
+            <img src={img}/>
             <div className='title'>
                 <h1>{title}</h1>
             </div>
@@ -30,7 +28,7 @@ export default function MovieCard({
                 {renderGenres()}
             </div>
             <div className='summary'>
-                <Truncate lines={3} ellipsis={<span>...</span>}>
+                <Truncate lines={2} ellipsis={<span>...</span>}>
                     {children}
                 </Truncate>
             </div>

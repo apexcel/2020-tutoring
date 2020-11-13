@@ -19,7 +19,8 @@ const sendStatics = (resp, respCode, path, contentType) => {
 
 http.createServer((req, resp) => {
     const path = req.url.replace(/\/?(?:\?.*)?$/, '').toLowerCase();
-
+    console.log(req.headers)
+    console.log(req.url)
     switch (path) {
         case '':
             //sendStatics(resp, 200, '/public/index.html', 'text/html');

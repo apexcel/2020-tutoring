@@ -8,15 +8,19 @@
     <title>Static</title>
 </head>
 <body>
-    <form action="/static/login" method="GET">
+
+    <form action="/static/login" method="POST">
         <input type="hidden" name="hidden_value" value="hidden data" />
+
         <label>ID
             <input name='id' type="text">
         </label>
         <label>PW
             <input name='pwd' type="password">
         </label>
+
         <button type="submit">Confirm</button type="submit">
     </form>
+
 </body>
 </html>

@@ -2,8 +2,8 @@ import '@babel/polyfill';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-import './App.css'
 import List from './List';
+import './App.css'
 
 function App() {
 

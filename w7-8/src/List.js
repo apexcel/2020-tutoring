@@ -5,21 +5,19 @@ export default function List() {
 
     const [list, setList] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
+
     useEffect(() => {
         if (!(list.length > 0)) {
             getList();
         }
     }, [])
 
-
     const getList = async () => {
-        const response = await axios.get('http://localhost:9000/users/list');
-        console.log(response)
-        setList(response.data.list);
+        const response = await axios.get('http://localhost:9000/users/list').then(res => res.data.list);
+        setList(response);
         setIsLoading(false);
         return;
     }
-
 
     const getUserData = async () => {
         await axios.get('http://localhost:9000/users/get-user-info').then(res => console.log(res));

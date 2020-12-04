@@ -33,7 +33,7 @@ function App() {
         password: password
       }
     }
-    const response = await axios.post(config.url, config.data);
+    const response = await axios.post(config.url, config.data); 
     console.log(response)
     if (response.data.msg === 'success') {
       setLogin(true);
